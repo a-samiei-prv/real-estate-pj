@@ -7,7 +7,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <div>
             <Link to="/" className="text-2xl font-bold mb-4 block">
-              三幸グループ株式
+              Sankou Group
             </Link>
             <div className="flex space-x-4 mt-4">
               {/* Social media icons */}
@@ -23,8 +23,8 @@ function Footer() {
             </div>
           </div>
           <div className="md:col-span-2">
-            <h3 className="font-bold mb-4">Become an E-Housing insider</h3>
-            <p className="mb-4">Subscribe to our newsletter for updated and latest news</p>
+            {/* <h3 className="font-bold mb-4">Become an Sankou Group insider</h3>
+            <p className="mb-4">Subscribe to our newsletter for updated and latest news</p> */}
             <form className="flex gap-4">
               <input
                 type="email"
@@ -36,13 +36,13 @@ function Footer() {
                 type="submit"
                 className="px-6 py-2 bg-orange-500 rounded hover:bg-orange-600"
               >
-                Subscribe
+                send
               </button>
             </form>
           </div>
         </div>
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p>© 2025 All rights Reserved. 三幸グループ株式</p>
+          <p>© 2025 All rights Reserved. Sankou Group</p>
           <div className="flex flex-wrap gap-4 mt-4 md:mt-0">
             <Link to="/terms" className="hover:text-orange-500">Terms</Link>
             <Link to="/privacy" className="hover:text-orange-500">Privacy</Link>

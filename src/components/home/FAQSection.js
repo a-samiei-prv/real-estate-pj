@@ -5,8 +5,8 @@ function FAQSection() {
   
   const faqs = [
     {
-      question: 'How do you ensure your properties are up-to-date daily?',
-      answer: 'We maintain direct relationships with property owners...'
+      question: 'Q',
+      answer: 'A'
     },
     // More FAQs...
   ];
@@ -15,7 +15,7 @@ function FAQSection() {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-4">
-          Frequently Asked Questions
+          Q&A
         </h2>
         <div className="max-w-3xl mx-auto space-y-4">
           {faqs.map((faq, index) => (

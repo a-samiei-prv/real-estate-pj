@@ -1,33 +1,74 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Header() {
+const Header = () => {
   return (
-    <header className="fixed w-full bg-white/80 backdrop-blur-md z-50">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold">
-            三幸グループ株式
+    <header className="w-full py-4 bg-white border-b">
+      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/public/assets/images/placeholder.jpg" 
+            alt="Sankou Group"
+            className="h-8"
+          />
+        </Link>
+
+        <div className="flex items-center space-x-1">
+          <Link
+            to="/"
+            className="px-4 py-2 rounded-full bg-black text-white text-sm"
+          >
+            Home
           </Link>
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link to="/" className="hover:text-orange-500">Home</Link>
-            <Link to="/buy" className="hover:text-orange-500">Buy</Link>
-            <Link to="/rent" className="hover:text-orange-500">Rent</Link>
-            <Link to="/short-term" className="hover:text-orange-500">Short-term</Link>
-            <Link to="/blog" className="hover:text-orange-500">Blog</Link>
-            <Link to="/about" className="hover:text-orange-500">About</Link>
-          </nav>
-          <div className="flex items-center space-x-4">
-            <button className="px-4 py-2 border border-orange-500 rounded hover:bg-orange-500 hover:text-white">
-              Start here
-            </button>
-            <button className="px-4 py-2 hover:text-orange-500">
-              My account
-            </button>
-          </div>
+          <Link
+            to="/buy"
+            className="px-4 py-2 rounded-full text-gray-600 hover:text-gray-900 text-sm"
+          >
+            ...
+          </Link>
+          <Link
+            to="/rent"
+            className="px-4 py-2 rounded-full text-gray-600 hover:text-gray-900 text-sm"
+          >
+            ...
+          </Link>
+          <Link
+            to="/short-term"
+            className="px-4 py-2 rounded-full text-gray-600 hover:text-gray-900 text-sm"
+          >
+            ...
+          </Link>
+          <Link
+            to="/blog"
+            className="px-4 py-2 rounded-full text-gray-600 hover:text-gray-900 text-sm"
+          >
+            ...
+          </Link>
+          <Link
+            to="/about"
+            className="px-4 py-2 rounded-full text-gray-600 hover:text-gray-900 text-sm"
+          >
+            About
+          </Link>
+        </div>
+
+        <div className="flex items-center space-x-3">
+          {/* <Link
+            to="/start"
+            className="px-5 py-2 rounded-full border border-[#FF4400] text-[#FF4400] text-sm hover:bg-[#FF4400] hover:text-white transition-colors"
+          >
+            Start here
+          </Link> */}
+          <Link
+            to="/account"
+            className="flex items-center space-x-2 text-sm text-gray-600 hover:text-gray-900"
+          >
+            <span>My account</span>
+          </Link>
         </div>
       </div>
     </header>
   );
-}
+};
 
 export default Header;
